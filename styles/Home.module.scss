@@ -1,0 +1,38 @@
+@import './variables';
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 6em;
+  font-family: $poppins;
+  background: #ffffff;
+  padding: 3em;
+  padding-top: 5em;
+  margin-top: 6em;
+  box-shadow: 0px 4px 14px 2px rgb(0 0 0 / 10%);
+
+  @media (max-width: 600px) {
+    padding: 1.5em;
+  }
+  .close_btn {
+    position: absolute;
+    z-index: 99;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    svg {
+      height: 1.5em;
+    }
+  }
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  @media (max-width: 920px) {
+    grid-template-columns: auto;
+    row-gap: 2rem;
+  }
+}
