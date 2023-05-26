@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import styles from './checkoutdetails.module.scss';
 import mastercard from '../../assets/mastercard-2.svg';
